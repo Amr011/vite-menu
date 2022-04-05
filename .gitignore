@@ -6,4 +6,4 @@ dist-ssr
 debug.log
 .idea
 
-./public/images/
+public/images/
