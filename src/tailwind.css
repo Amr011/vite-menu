@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bg-primary {
+  background: #664b31;
+}
+
+.bg-secondery {
+  background: #b08e6c;
+}
+
+.text-primary {
+  color: #664b31;
+}
+
+.text-secondery {
+  color: #b08e6c;
+}

@@ -1,7 +1,13 @@
 <template>
-  <header class="bg-white shadow">
-    <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold leading-tight text-gray-900">Not Found</h1>
+  <div class="flex h-screen items-center justify-center">
+    <div class="mx-auto text-center">
+      <p class="text-4xl font-bold uppercase text-gray-900">Error</p>
+      <h1 class="mb-10 text-9xl font-bold uppercase text-gray-900">404</h1>
+      <router-link
+        to="/"
+        class="rounded-md border-2 border-gray-600 bg-stone-700 px-6 py-2 text-2xl font-bold uppercase text-white transition-all hover:bg-transparent hover:text-gray-900 hover:duration-200"
+        >back to home</router-link
+      >
     </div>
-  </header>
+  </div>
 </template>
