@@ -1,16 +1,19 @@
 <script>
-export default {}
+import navbar from './components/navbar.vue'
+import menuFooter from './components/menu-footer.vue'
+export default {
+  components: { navbar, menuFooter },
+}
 </script>
 
 <template>
   <div>
-    <header class="bg-white shadow" v-if="$route.meta.title">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        {{ $route.meta.title }}
-      </div>
-    </header>
+    <div class="container mx-auto flex justify-center">
+      <navbar v-if="$route.meta.title" />
+    </div>
     <main>
       <router-view />
     </main>
+    <menuFooter v-if="$route.meta.title" />
   </div>
 </template>

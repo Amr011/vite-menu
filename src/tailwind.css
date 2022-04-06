@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .bg-primary {
   background: #664b31;
 }
@@ -20,4 +16,12 @@ body {
 
 .text-secondery {
   color: #b08e6c;
+}
+
+.border-primary {
+  border-color: #664b31;
+}
+
+.border-secondery {
+  border-color: #b08e6c;
 }
