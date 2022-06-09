@@ -20,8 +20,7 @@ export default {
 <template>
   <div class="container mx-auto">
     <menu-header />
-    <menuCategorySwiper />
-    <menuCategorySwiper class="mt-4" />
+    <!-- <menuCategorySwiper class="mt-4" /> -->
     <div class="" v-for="item in itemCount" :key="item">
       <menu-item />
     </div>

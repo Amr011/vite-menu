@@ -10,10 +10,9 @@ export default {
 <template>
   <button
     @click="isActive = !isActive"
-    class="bg-secondery w-full py-2 px-2 text-base font-bold text-white md:px-6 lg:px-8 lg:text-lg xl:px-8 xl:text-xl"
+    class="bg-secondery py-1 px-4 text-base font-bold text-white md:px-6 lg:px-8 lg:text-lg xl:px-8 xl:text-xl"
+    style="width: auto !important"
   >
-    <!--     :class="isActive ? 'bg-secondery' : 'bg-primary'"
- -->
     {{ categoryTitle }}
   </button>
 </template>

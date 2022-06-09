@@ -34,9 +34,9 @@ export default {
 }
 </script>
 <template>
-  <div class="menu-item">
+  <div class="menu-item rounded-xl">
     <div class="\ col-span-2 flex items-center justify-start">
-      <img :src="itemImgSrc" class="-lg h-full object-cover" :alt="itemImageAlt" />
+      <img :src="itemImgSrc" class="h-full rounded-md object-cover" :alt="itemImageAlt" />
     </div>
     <div class="col-span-3 my-0.5 grid grid-rows-3 justify-start">
       <div class="row-span-2">

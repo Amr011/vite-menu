@@ -16,23 +16,32 @@ export default {
   data() {
     return {
       isActive: false,
-      indexNum: 10,
+      indexNum: ['Hot  Chocolate  Chocolate', 'Espresso', 'Cold Tea'],
     }
   },
 }
 </script>
 <template>
   <swiper
-    class="w-80 md:w-[480px] lg:w-[520px] xl:w-[580px]"
-    :slides-per-view="4"
-    :space-between="2"
+    class="swiper-wrapper swiper-container ml-10 w-80 md:w-[480px] lg:w-[520px] xl:w-[580px]"
+    :slidesPerView="4"
+    :spaceBetween="10"
+    :slideToClickedSlide="true"
+    :paginationClickable="true"
     :grabCursor="true"
     :watchSlidesVisibility="true"
+    :observer="true"
+    :observeParents="true"
+    :autoHeight="true"
   >
-    <swiper-slide class="mx-2" v-for="index in indexNum" :key="index"
+    <swiper-slide class="border-2" v-for="index in indexNum" :key="index"
       ><menuCategory :categoryTitle="index"
     /></swiper-slide>
   </swiper>
 </template>
 
-<style></style>
+<style>
+.swiper-warper {
+  display: flex;
+}
+</style>
